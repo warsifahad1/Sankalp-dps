@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -229,6 +229,9 @@ header {
     padding: 2rem;
     border-radius: 8px;
     
+}
+.testimonial-card p{
+    font-family: cursive;
 }
 
 .quote-icon {
