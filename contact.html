@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="CSS/slick-theme.css">
     <link rel="stylesheet" href="CSS/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rBd_vn-6P-_9QcYWw",
+      });
+   })();
+</script>
+<script src="JS/script.js"></script>
 </head>
 
 <body>
@@ -99,7 +110,7 @@
                             <textarea id="message" name="message" rows="5" placeholder="Your Message"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" onclick="sendMail()" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
